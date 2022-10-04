@@ -1,0 +1,41 @@
+@mixin onHover {
+    &:hover {
+        opacity: 1;
+    }
+}
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+a {
+    display: block;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    color: inherit;
+    @include onHover();
+}
+div {
+    padding: 0 2rem;
+}
+button {
+    border: none;
+    background-color: blue;
+    opacity: 0.8;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    @include onHover();
+    font-weight: bold;
+    font-size: 12px;
+}
+h4 {
+    opacity: 0.9;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+p, a {
+  opacity: 0.8;
+}
